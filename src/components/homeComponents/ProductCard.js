@@ -14,13 +14,15 @@ const ProductCard = ({ grid }) => {
   return (
     <>
       <div
-        className={`${location.pathname == "/store" ? `gr-${grid}` : "col-3"}`}
+        className={`${
+          location.pathname == "/product" ? `gr-${grid}` : "col-3"
+        }`}
       >
-        <Link className="product-card position-relative">
+        <Link to="/product/:id" className="product-card position-relative">
           <div className="wishlist-icon position-absolute">
-            <Link>
+            <button className="border-0 bg-transparent">
               <img src={wishlist} alt="wishlist" />
-            </Link>
+            </button>
           </div>
           <div className="product-image">
             <img src={watch} className="img-fluid" alt="product img" />
@@ -48,21 +50,23 @@ const ProductCard = ({ grid }) => {
           </div>
           <div className="action-bar position-absolute">
             <div className="d-flex flex-column gap-15">
-              <Link>
+              <button className="border-0 bg-transparent" on>
                 <img src={compare} alt="compare" />
-              </Link>
-              <Link>
+              </button>
+              <button className="border-0 bg-transparent">
                 <img src={view} alt="view" />
-              </Link>
-              <Link>
+              </button>
+              <button className="border-0 bg-transparent">
                 <img src={addCart} alt="" />
-              </Link>
+              </button>
             </div>
           </div>
         </Link>
       </div>
       <div
-        className={`${location.pathname == "/store" ? `gr-${grid}` : "col-3"}`}
+        className={`${
+          location.pathname == "/product" ? `gr-${grid}` : "col-3"
+        }`}
       >
         <Link className="product-card position-relative">
           <div className="wishlist-icon position-absolute">

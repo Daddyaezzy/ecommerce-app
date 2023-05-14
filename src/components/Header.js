@@ -10,9 +10,17 @@ import { AiOutlineCaretDown, AiFillCaretRight } from "react-icons/ai";
 
 const Header = () => {
   const [tap, setTap] = useState(false);
+  const [tap2, setTap2] = useState(false);
 
   const dropDown = () => {
     setTap(!tap);
+  };
+  const dropDown2 = () => {
+    setTap2(!tap2);
+  };
+
+  const resetTap = () => {
+    setTap(false);
   };
 
   return (
@@ -84,15 +92,31 @@ const Header = () => {
                   </Link>
                 </div>
                 <div>
-                  <Link
-                    to="/login"
+                  <div
+                    onClick={dropDown2}
+                    // to="/login"
                     className="d-flex align-items-center gap-10 text-white"
                   >
                     <img src={user} alt="user" />
-                    <p className="mb-0">
-                      Login <br /> My Account
-                    </p>
-                  </Link>
+                    <p className="mb-0 user-point">My Account</p>
+                  </div>
+                  {tap2 && (
+                    <div className="flex flex-col drop-down2 point2">
+                      <ul className="flex flex-col gap-4 point">
+                        <li>
+                          <Link className="auth-link" to="/login">
+                            Login
+                          </Link>
+                        </li>
+                        <hr />
+                        <li>
+                          <Link className="auth-link" to="/signup">
+                            Sign Up
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+                  )}
                 </div>
                 <div>
                   <Link
@@ -144,7 +168,7 @@ const Header = () => {
                     <NavLink className="text-white" to="/">
                       Home
                     </NavLink>
-                    <NavLink className="text-white" to="/store">
+                    <NavLink className="text-white" to="/product">
                       Our Store
                     </NavLink>
                     <NavLink className="text-white" to="/blogs">
