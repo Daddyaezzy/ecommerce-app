@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { BsSearch } from "react-icons/bs";
 import compare from "../images/compare.svg";
@@ -17,10 +17,6 @@ const Header = () => {
   };
   const dropDown2 = () => {
     setTap2(!tap2);
-  };
-
-  const resetTap = () => {
-    setTap(false);
   };
 
   return (

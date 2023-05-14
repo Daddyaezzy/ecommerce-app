@@ -99,9 +99,9 @@ const SingleProduct = () => {
                   />
                   <p className="mb-0 t-review">(2 Reviews)</p>
                 </div>
-                <a className="mt-1 review-brn" href="#review">
-                  Write a review
-                </a>
+                <Link className="mt-1 review-brn" href="#review">
+                  Write Link review
+                </Link>
               </div>
               <div className="border-bottom py-3">
                 <div className="d-flex gap-10 align-items-center my-2">
@@ -172,14 +172,14 @@ const SingleProduct = () => {
                 </div>
                 <div className="d-flex align-items-center gap-15">
                   <div>
-                    <a href="">
+                    <Link to="/compare-product">
                       <TbGitCompare className="fs-5 me-2" /> Add to Compare
-                    </a>
+                    </Link>
                   </div>
                   <div>
-                    <a href="">
+                    <Link href="">
                       <AiOutlineHeart className="fs-5 me-2" /> Add to Wishlist
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="d-flex gap-10 flex-column mt-3 my-3">
@@ -192,14 +192,14 @@ const SingleProduct = () => {
                 </div>
                 <div className="d-flex gap-10 align-items-center my-3">
                   <h3 className="product-header">Product Link:</h3>
-                  <a
-                    href="javascript:void(0);"
+                  <Link
+                    to="javascript:void(0);"
                     onClick={copyToClipboard(
                       '"https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-fernando-arcos-190819.jpg&fm=jpg"'
                     )}
                   >
                     Copy Product Link
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -243,14 +243,14 @@ const SingleProduct = () => {
                 </div>
                 {orderedProduct && (
                   <div>
-                    <a className="text-dark text-decoration-underline" href="">
-                      Write a Review
-                    </a>
+                    <Link className="text-dark text-decoration-underline">
+                      Write Link Review
+                    </Link>
                   </div>
                 )}
               </div>
               <div className="review-form py-4">
-                <h4>Write a Review</h4>
+                <h4>Write Link Review</h4>
                 <form action="" className="d-flex flex-column gap-15">
                   <div className="pb-3">
                     <Rating

@@ -15,7 +15,7 @@ const ProductCard = ({ grid }) => {
     <>
       <div
         className={`${
-          location.pathname == "/product" ? `gr-${grid}` : "col-3"
+          location.pathname === "/product" ? `gr-${grid}` : "col-3"
         }`}
       >
         <Link to="/product/:id" className="product-card position-relative">
@@ -41,7 +41,7 @@ const ProductCard = ({ grid }) => {
               activeColor="#ffd700"
               starRatedColor="#ffd700"
             />
-            <p className={`description ${grid == 12 ? "d-block" : "d-none"}`}>
+            <p className={`description ${grid === 12 ? "d-block" : "d-none"}`}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Consequuntur praesentium ipsam enim adipisci rem sapiente dolore,
               quae nulla blanditiis! Autem.
@@ -65,7 +65,7 @@ const ProductCard = ({ grid }) => {
       </div>
       <div
         className={`${
-          location.pathname == "/product" ? `gr-${grid}` : "col-3"
+          location.pathname === "/product" ? `gr-${grid}` : "col-3"
         }`}
       >
         <Link className="product-card position-relative">
@@ -91,7 +91,7 @@ const ProductCard = ({ grid }) => {
               activeColor="#ffd700"
               starRatedColor="#ffd700"
             />
-            <p className={`description ${grid == 12 ? "d-block" : "d-none"}`}>
+            <p className={`description ${grid === 12 ? "d-block" : "d-none"}`}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Consequuntur praesentium ipsam enim adipisci rem sapiente dolore,
               quae nulla blanditiis! Autem.

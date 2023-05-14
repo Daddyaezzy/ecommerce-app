@@ -13,9 +13,6 @@ import Container from "../components/Container";
 
 const OurStore = () => {
   const [grid, setGrid] = useState(4);
-  const gridSetter = (i) => {
-    setGrid(i);
-  };
 
   return (
     <>

@@ -16,6 +16,7 @@ const Contact = () => {
         <div className="row">
           <div className="col-12">
             <iframe
+              title="map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.3176249349945!2d3.3771377746655884!3d6.607396722183379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b92ff7884b74f%3A0xc5e99102fd831bd2!2sAtinmo%20St%2C%20Ikosi%20Ketu%20105102%2C%20Ikeja%2C%20Lagos!5e0!3m2!1sen!2sng!4v1682809083592!5m2!1sen!2sng"
               width="600"
               height="450"
