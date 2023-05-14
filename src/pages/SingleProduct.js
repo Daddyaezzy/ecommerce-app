@@ -6,14 +6,13 @@ import ProductCard from "../components/homeComponents/ProductCard";
 import { Rating } from "react-simple-star-rating";
 import StarRatings from "react-star-ratings";
 import ReactImageZoom from "react-image-zoom";
-import watch from "../images/watch.jpg";
 import Color from "../components/CompareProducts/Color";
 import { TbGitCompare } from "react-icons/tb";
 import { AiOutlineHeart } from "react-icons/ai";
 import Container from "../components/Container";
 
 const SingleProduct = () => {
-  const [orderedProduct, setOrderedproduct] = useState(true);
+  const orderedProduct = true;
   const [rating, setRating] = useState(2);
 
   const props = {
@@ -195,7 +194,7 @@ const SingleProduct = () => {
                   <Link
                     to="javascript:void(0);"
                     onClick={copyToClipboard(
-                      '"https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-fernando-arcos-190819.jpg&fm=jpg"'
+                      "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-fernando-arcos-190819.jpg&fm=jpg"
                     )}
                   >
                     Copy Product Link
