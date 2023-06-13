@@ -22,7 +22,7 @@ const ProductCard = ({ grid }) => {
           to={`${
             location.pathname !== "/product"
               ? "/product/:id"
-              : location.pathname == "/product/:id"
+              : location.pathname === "/product/:id"
               ? "/product/1"
               : ":id"
           }`}
@@ -81,7 +81,7 @@ const ProductCard = ({ grid }) => {
           to={`${
             location.pathname !== "/product"
               ? "/product/:id"
-              : location.pathname == "/product/:id"
+              : location.pathname === "/product/:id"
               ? "/product/:id"
               : ":id"
           }`}
