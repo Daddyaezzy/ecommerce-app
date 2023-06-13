@@ -162,7 +162,7 @@ const OurStore = () => {
                     <b>$ 300</b>
                   </div>
                 </div>
-                <div className="random-products d-flex">
+                <div className="random-products d-flex pt-4">
                   <div className="w-50">
                     <img src={watch} className="img-fluid" alt="watch" />
                   </div>
@@ -192,7 +192,13 @@ const OurStore = () => {
                   <p className="mb-0 d-block" style={{ width: "100px" }}>
                     Sort By:
                   </p>
-                  <select name="" id="" className="form-control form-select">
+                  <select
+                    name=""
+                    defaultValue={"manual"}
+                    id=""
+                    className="form-control form-select"
+                  >
+                    <option value="manual">Featured</option>
                     <option value="manual">Featured</option>
                     <option value="best-selling" selected="selected">
                       Best selling
